@@ -3,24 +3,30 @@
 <head>
 <style>
 body {
-margin: 0;
-padding: 0;
+	margin: 0;
+	background-color: #000000;
 }
 
-.image-container {
-width: 100%;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 设置容器高度为视口高度 */
 }
 
-.image-container img {
-width: 100%;
-height: auto;
-max-height: 100%;
+.image {
+  background-image: url('https://her-1316917631.cos.ap-guangzhou.myqcloud.com/%E6%98%9F%E8%BE%B0/starry1.png'); /* 设置图片的URL */
+  background-position: center center; /* 将背景图片居中 */
+  background-repeat: no-repeat; /* 禁止背景图片重复 */
+  background-size: contain; /* 根据图片保持宽高比缩放背景图片 */
+  width: 100%; /* 设置图片宽度为容器宽度 */
+  height: 100%; /* 设置图片高度为容器高度 */
 }
 </style>
 </head>
 <body>
-<div class="image-container">
-<img src="https://her-1316917631.cos.ap-guangzhou.myqcloud.com/%E6%98%9F%E8%BE%B0/starry1.png"/>
-</div>
+	<div class="container">
+	  <div class="image"></div>
+	</div>
 </body>
 </html>
